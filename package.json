@@ -1,0 +1,27 @@
+{
+  "name": "drafts-core",
+  "version": "1.0.0",
+  "description": "The Drafts project is to write random code before past to react or another library the reason of this is to create little pieces of code without any framework or library. Its only for experimental purposes.",
+  "scripts": {
+    "start": "nodemon --exec babel-node -- src/index.js",
+    "build": "babel src --out-dir dist",
+    "prod": "node dist/index.js",
+    "eslint": "eslint './src/**/*.js'",
+    "eslint:fix": "eslint './src/**/*.js' --fix",
+    "format": "prettier --write '{*.js,src/**/*.js}'"
+  },
+  "author": "Luis Rubio <luirting@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  }
+}
